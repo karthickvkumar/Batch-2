@@ -1,0 +1,44 @@
+/* h1{
+  color:red;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 3px black;
+}
+
+p{
+  text-indent: 100px;
+  line-height: 3;
+  word-spacing: 20px;
+} */
+
+.headings{
+  color:red;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 3px black;
+}
+
+.paragraph{
+  color:rgb(121, 0, 168);
+  text-align: left;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 3px black;
+}
+
+.pargraph-1{
+  color : green
+}
+
+.pargraph-2{
+  color: blue;
+}
+
+.pargraph-3{
+  color: darkmagenta;
+}
