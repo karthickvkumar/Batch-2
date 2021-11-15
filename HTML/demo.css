@@ -1,0 +1,78 @@
+.colum-1{
+  border: 2px solid red;
+  height: 33vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.colum-2{
+  border: 2px solid red;
+  height: 25vh;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.colum-3{
+  border: 2px solid red;
+  height: 33vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.image{
+  border: 2px solid blue;
+  width: 22%;
+}
+
+.heading{
+  border: 2px solid black;
+  width: 78%;
+}
+
+.main-heading{
+  border: 2px solid;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-heading{
+  border: 2px solid red;
+  height: 57%;
+}
+
+.heading-image{
+  border: 2px solid blue;
+  width: 10%;
+}
+
+.heading-text{
+  border: 2px solid green;
+  width: 75%;
+}
+
+.heading-date{
+  border: 2px solid red;
+  width: 15%;
+}
+
+.sub-image{
+  border: 2px solid red;
+  width: 28%;
+}
+
+.image-content{
+  border: 2px solid;
+  height: 60%;
+}
+
+.image-heading{
+  border: 2px solid blue;
+  height: 20%;
+}
+
+.image-sub-heading{
+  border: 2px solid red;
+  height: 15%;
+}
