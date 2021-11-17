@@ -22,3 +22,37 @@ console.log(result);
 
 var empty_data;
 console.log(empty_data);
+
+//Object - It is a collection of key value pairs.
+// Syntax :
+/*var variable_name = {
+  key_1 : value,
+  key_2 : value,
+  key_3 : value 
+}*/
+
+var student_information = {
+  first_name : "Karthick",
+  last_name : "Kumar",
+  age : 27,
+  roll_number : 478541686,
+  score : 450,
+  grade : "A+"
+}
+
+console.log(student_information);
+//Object -> 4 operation = read value, insert new value, edit exisiting value, delete existing value. 
+
+//To Read a Value -> object_variable_name.key;
+console.log(student_information.first_name);
+
+//To Insert a new Value -> object_variable_name.new_key = new_value;
+student_information.location = "Chennai";
+
+//To Edit/Updated an exisiting value -> object_variable_name.existing_key = new_value;
+student_information.first_name = "Mr.Abc";
+
+//To delete a existing Record -> delete object_variable_name.key
+delete student_information.roll_number;
+
+console.log(student_information)
