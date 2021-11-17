@@ -56,3 +56,31 @@ student_information.first_name = "Mr.Abc";
 delete student_information.roll_number;
 
 console.log(student_information)
+
+//Array -> It is a collection of List data (List of Data)
+//Syntax of creating an Array
+//var variable_name = [ value_1, value_2, .... , Value_n ];
+
+var total_marks = [68, 78, 57, 34, 51, 44];
+console.log(total_marks);
+
+var name_list = ["Karthick", "Kumar", "Ankit", "Harsh", "Yuvaraj"];
+console.log(name_list);
+
+var record_list = [
+  {
+    name: 'Mr.A',
+    age: 45
+  },
+  {
+    name: 'Mr.B',
+    age: 78
+  },
+  {
+    name : 'Mr.C',
+    age : 45
+  }
+];
+console.log(record_list);
+
+// Operation in Array -> 4 Operation = Insert a new value, Read the Value, Edit the exiting value, Delete the value
