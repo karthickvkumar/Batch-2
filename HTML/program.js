@@ -125,3 +125,12 @@ function onLogin(){
   var result = "You have loggin to the application";
   console.log(result);
 }
+
+//Operators 
+/* 
+1. Arithmetic Operator -> +, -, *, /, %, ++, --
+2. Assignment Operator -> =, == 
+3. Comparision Operator -> <, <=, >, >=
+4. Logical Operator -> &&, ||, ! (AND, OR, NOT)
+*/
+
