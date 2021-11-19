@@ -129,8 +129,114 @@ function onLogin(){
 //Operators 
 /* 
 1. Arithmetic Operator -> +, -, *, /, %, ++, --
-2. Assignment Operator -> =, == 
+2. Assignment Operator -> =, ==, !=, ===, !==
 3. Comparision Operator -> <, <=, >, >=
 4. Logical Operator -> &&, ||, ! (AND, OR, NOT)
 */
+// && AND
+// true && true -> true
+// false && true -> false
+// true && false -> false
+// false && false ->  false
 
+// || OR
+// true || true -> true
+// false || true -> true
+// true || false -> true
+// false || false -> false
+
+//Syntax - if else conditon
+/*
+  if(conditon) {
+    // code block will execute if the condition is Truthy.
+  }
+  else{
+    // code block will execute if the condition is Falsy.
+  }
+*/
+
+/*
+Problem statement :
+To verify whether the user is eligible for Voting in India
+1. To pass a number value for a function as age input
+2. To validate age is greater than or equal to 18
+3. If the age is greater than or equal -> This user is Eligible for Vote
+4. If the age is less than -> This user is Not Eligible for Vote
+*/
+
+function check_voting_age(){
+  var value = prompt("Enter your age :");
+  var age = parseInt(value);
+
+  if(age >= 18){
+    console.log("This user is Eligible for Vote");
+  }
+  else{
+    console.log("This user is NOT Eligible for Vote");
+  }
+}
+
+//Syntax - Multipe if else conditon
+/*
+  if(conditon) {
+    // code block will execute if the condition is Truthy.
+  }
+  else if(condition){
+   // code block will execute if the condition is Truthy
+  }
+  else{
+    // code block will execute if the condition is Falsy.
+  }
+*/
+
+/*
+1. Pass person age -> Number
+2. idenfity -> less then or equal to 18 -> The person is Minor
+2. idenfity -> greater then 18 and less than 60 -> The person is Major
+3. idenfity -> greater then or equal to 60 -> The person is Super Citizen
+*/
+
+function check_age_category(){
+  var value = prompt("Enter your age :");
+  var age = parseInt(value);
+
+  if(age <= 18){
+    console.log("The person is Minor")
+  }
+  else if(age > 18 && age < 60){
+    console.log("The person is Major")
+  }
+  else{
+    console.log("The person is Super Citizen")
+  }
+}
+
+/* 
+Syntax - for (loop)
+for(initialization;  condition; increment/decrement){ 
+  //code block
+}
+*/
+
+for(var count = 1; count <= 10; count++){
+ console.log("Loop is running on count ", count);
+}
+
+/*
+1. Find even number for given limit.
+Solution: 
+1. Get number (limit) value from user while running the code.
+2. Logic for finding even number -> Number % 2 => 0
+3. Repeat this logic till n number
+*/
+
+function print_even_numbers(){
+  var value = prompt("Enter the limit");
+  var limit = parseInt(value);
+
+  for(var count = 1; count <= limit; count++){
+    if(count % 2 === 0){
+      console.log('The even number is ', count)
+    }
+  }
+}
