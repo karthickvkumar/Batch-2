@@ -299,7 +299,7 @@ switch(expression){
 function find_weekday(){
   var value = prompt("Enter a number from 0 - 6")
   var day = parseInt(value);
-  
+
   switch(day){
     case 0:
       console.log("Sunday");
@@ -313,4 +313,24 @@ function find_weekday(){
     default:
       console.log('Out of range')
   }
+}
+
+function display(){
+  try{
+    var day = "Monday";  // local scope
+    // console.log(day);
+    var number_1 = 25;
+    var number_2 = 100;
+    var result = number_1 + number_3;
+    console.log(result);
+  }
+  catch(error){
+    console.log(error);
+    alert("Sorry, something went wrong pls try again!")
+  }
+ 
+}
+
+function printData(){
+  console.log(day);
 }
