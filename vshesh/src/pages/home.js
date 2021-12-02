@@ -36,6 +36,8 @@ class HomePage extends Component{
         <br></br>
         <NavLink to="/contact">Click here, to go Contact Page</NavLink>
         <br></br>
+        <NavLink to="/signup">Click here, to go Register Page</NavLink>
+        <br></br>
         <button onClick={() => this.checkVotingAge()}>Click to run Method</button>
         <h1>{this.state.message}</h1>
       </div>
