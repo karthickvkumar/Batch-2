@@ -60,3 +60,7 @@
 .eye-image{
   width: 25px;
 }
+
+.error-message {
+  color : red;
+}
