@@ -64,6 +64,48 @@ app.post("/api/user/create", (request, response) => {
 
 });
 
+app.put("/api/user/edit/:id", (request, response) => {
+  var id = request.params.id;
+
+  var firstName = request.body.first_name;
+  var lastName = request.body.last_name;
+  var emailId = request.body.email_id;
+  var age = request.body.age;
+  var location = request.body.location;
+
+  var query = `UPDATE employee_record SET first_name='${firstName}', last_name='${lastName}', eamil_id='${emailId}', location='${location}', age=${age} WHERE id=${id}`;
+  
+  connection.query(query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+
+    response.status(200).send({
+      result,
+      message : "Update the given user information"
+    })
+  })
+});
+
+app.delete("/api/user/delete/:id", (request, response) => {
+  var id = request.params.id;
+
+  var query = `DELETE FROM employee_record WHERE id=${id}`;
+
+  connection.query(query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+    
+    response.status(200).send({
+      result,
+      message : "Successfully deleted the user profile"
+    })
+  });
+})
+
 
 const port = process.env.PORT || 4000;
 http.listen(port, () => {
