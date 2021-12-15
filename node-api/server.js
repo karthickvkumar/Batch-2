@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const mysql = require("mysql");
-const req = require("express/lib/request");
 const app = express();
 const http = require("http").createServer(app);
 
